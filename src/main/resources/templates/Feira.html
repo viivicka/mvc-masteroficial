@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Feira livre</title>
+</head>
+<body>
+<h1>Frutas </h1>
+<hr>
+
+<table>
+    <thead>
+    <tr>
+
+    <th> Fruta</th>
+    <th> Cor</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="feiravi:${feiravi}">
+    <td th:text="${feira.fruta}">Fruta</td>
+        <td th:text="${feira.cor}">Cor</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
